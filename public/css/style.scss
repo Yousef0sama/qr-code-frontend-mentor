@@ -1,0 +1,57 @@
+// Colors
+
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+// glabal
+
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.con {
+    width: 100vw;
+    height: 100vh;
+    background-color: $Light-gray;
+    position: relative;
+    .Card {
+        background-color: $White;
+        width: 355px;
+        height: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%, -50%);
+        border-radius: 25px;
+        box-shadow: 1px 1px 19px rgba(0,0,0,0.1);
+        padding: 10px;
+        text-align: center;
+        img {
+            width: 335px;
+            border-radius: 25px;
+        }
+        span {
+            padding: 10px;
+            margin: 10px 0px;
+            display: block;
+        }
+        .heavy{
+            color: $Dark-blue;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        .light{
+            color: $Grayish-blue;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}
